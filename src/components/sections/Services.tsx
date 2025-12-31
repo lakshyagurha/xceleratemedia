@@ -9,7 +9,7 @@ const services = [
   {
     icon: <Megaphone className="h-4 w-4 text-neutral-500" />,
     title: "Influencer Strategy",
-    description: "Data-backed strategies tailored to your brand goals, ensuring maximum impact and ROI.",
+    description: "Data-backed strategies tailored to your brand goals. We prioritize long-term perception over short-term spikes.",
     header: (
       <div className="flex flex-1 w-full h-full min-h-[6rem] sm:min-h-[8rem] rounded-xl overflow-hidden relative">
         <Image
@@ -25,8 +25,8 @@ const services = [
   },
   {
     icon: <Users className="h-4 w-4 text-neutral-500" />,
-    title: "Creator Sourcing",
-    description: "Access to a vetted network of creators who align perfectly with your brand voice and values.",
+    title: "Creator Identification",
+    description: "We don't just find influencers. We find partners who authentically align with your brand's narrative.",
     header: (
       <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden relative">
         <Image
@@ -42,7 +42,7 @@ const services = [
   {
     icon: <PenTool className="h-4 w-4 text-neutral-500" />,
     title: "Content Creation",
-    description: "High-quality, platform-native content production that stops the scroll and drives engagement.",
+    description: "Platform-native storytelling that feels genuine, not transactional. Content that stops the scroll.",
     header: (
       <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden relative">
         <Image
@@ -57,8 +57,8 @@ const services = [
   },
   {
     icon: <BarChart3 className="h-4 w-4 text-neutral-500" />,
-    title: "Campaign Management",
-    description: "End-to-end execution, from negotiation and contracting to approval and posting.",
+    title: "End-to-End Execution",
+    description: "From negotiation to posting, we handle the friction so you can focus on the big picture.",
     header: (
       <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden relative">
         <Image
@@ -73,8 +73,8 @@ const services = [
   },
   {
     icon: <Zap className="h-4 w-4 text-neutral-500" />,
-    title: "Performance Marketing",
-    description: "Amplify organic creator content with paid media strategies to scale results.",
+    title: "Paid Amplification",
+    description: "Scale your best performing organic content with strategic paid media to maximize reach.",
     header: (
       <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden relative">
         <Image
@@ -90,7 +90,7 @@ const services = [
   {
     icon: <Globe className="h-4 w-4 text-neutral-500" />,
     title: "Global Reach",
-    description: "Execute multi-market campaigns with our international network of influencers.",
+    description: "Multi-market campaigns with a global network of voices. Influence knows no borders.",
     header: (
       <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden relative">
         <Image
@@ -110,11 +110,11 @@ export const Services = () => {
     <Section id="services" className="bg-white dark:bg-black">
       <Container>
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16 px-4 sm:px-0">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-white tracking-tight">
             Our Expertise
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-            Comprehensive solutions designed to elevate your brand in the creator economy.
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 font-light">
+            We build influence through four key pillars.
           </p>
         </div>
 

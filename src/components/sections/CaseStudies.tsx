@@ -51,10 +51,10 @@ export const CaseStudies = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 px-4 sm:px-0">
            <div className="max-w-2xl">
              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white tracking-tight">
-               Success Stories
+               Selected Work
              </h2>
-             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-               Real results for real brands. Explore how we've helped ambitious companies scale new heights through strategic marketing and creative excellence.
+             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-light">
+               Real results for real brands. See how we've helped ambitious companies scale new heights.
              </p>
            </div>
            <Button variant="outline" className="hidden md:flex gap-2 group">

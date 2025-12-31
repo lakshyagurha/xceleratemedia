@@ -9,11 +9,11 @@ export const CTA = () => {
     <Section id="contact" className="bg-blue-600 dark:bg-blue-700 text-white text-center">
       <Container>
         <div className="max-w-3xl mx-auto px-4 sm:px-0">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 tracking-tight">
             Ready to Scale Your Brand?
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 sm:mb-10">
-            Join the hundreds of brands leveraging Xcelerate Media to dominate their niche. Let's build something great together.
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 sm:mb-10 font-light">
+            Join the brands leveraging Xcelerate Media to dominate their niche. Let's build something great.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
              <a href="mailto:hello@xceleratemedia.com" className="w-full sm:w-auto">

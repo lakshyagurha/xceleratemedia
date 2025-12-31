@@ -164,19 +164,13 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-72 sm:h-80 w-52 sm:w-56 flex-col items-start justify-start overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+      className="relative z-10 flex h-72 sm:h-80 w-52 sm:w-56 flex-col items-center justify-center overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
     >
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
+      <div className="pointer-events-none absolute inset-0 z-30 h-full w-full bg-black/70" />
       <div className="relative z-40 p-4 sm:p-6 md:p-8">
         <motion.p
-          layoutId={layout ? `category-${card.category}` : undefined}
-          className="text-left font-sans text-xs sm:text-sm font-medium text-white md:text-base"
-        >
-          {card.category}
-        </motion.p>
-        <motion.p
           layoutId={layout ? `title-${card.title}` : undefined}
-          className="mt-2 max-w-xs text-left font-sans text-lg sm:text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
+          className="max-w-xs text-center font-sans text-lg sm:text-xl font-extrabold [text-wrap:balance] text-white md:text-3xl"
         >
           {card.title}
         </motion.p>
@@ -201,15 +195,12 @@ export const BlurImage = ({
   blurDataURL,
   ...rest
 }: ImageProps) => {
-  const [isLoading, setLoading] = useState(true);
   return (
     <img
       className={cn(
         "h-full w-full transition duration-300",
-        isLoading ? "blur-sm" : "blur-0",
         className,
       )}
-      onLoad={() => setLoading(false)}
       src={src as string}
       width={width}
       height={height}

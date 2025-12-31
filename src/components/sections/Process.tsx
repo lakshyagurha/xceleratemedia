@@ -31,11 +31,11 @@ export const Process = () => {
       <Container>
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
           <div className="md:w-1/3">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white md:sticky md:top-24">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white md:sticky md:top-24 tracking-tight">
               How We Work
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 md:sticky md:top-40">
-              A streamlined process designed for transparency, efficiency, and results.
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 md:sticky md:top-40 font-light">
+              Transparency at every step. No black boxes, just results.
             </p>
           </div>
           

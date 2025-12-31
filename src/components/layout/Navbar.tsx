@@ -12,6 +12,7 @@ const navLinks = [
   { name: "Services", href: "#services" },
   { name: "Creators", href: "#creators" },
   { name: "Work", href: "#work" },
+  { name: "Join Us", href: "/join-us" },
 ];
 
 export const Navbar = () => {
@@ -38,7 +39,7 @@ export const Navbar = () => {
       <Container>
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="text-xl sm:text-2xl font-bold tracking-tighter">
+          <Link href="/" className="text-xl sm:text-2xl font-bold tracking-tighter font-display">
             Xcelerate<span className="text-blue-600">Media</span>
           </Link>
 

@@ -6,8 +6,8 @@ import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
   {
-    title: "Data-Driven Approach",
-    description: "We don't guess. We use proprietary data to identify high-performing creators and predict campaign outcomes."
+    title: "Perception Over Reach",
+    description: "We don't just count eyeballs. We measure shifts in how people think about your brand."
   },
   {
     title: "End-to-End Service",
@@ -42,11 +42,11 @@ export const WhyChooseUs = () => {
            </div>
            
            <div className="lg:w-1/2 w-full order-1 lg:order-2">
-             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white">
-               Why Leading Brands Partner With Us
+             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white tracking-tight">
+               What should people believe about you?
              </h2>
-             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 md:mb-10">
-               In a crowded market, Xcelerate Media stands out by delivering transparency, creativity, and measurable performance.
+             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 md:mb-10 font-light">
+               Most agencies measure success in impressions. We measure it in recall. Here's how we stand out.
              </p>
              
              <div className="space-y-6 sm:space-y-8">

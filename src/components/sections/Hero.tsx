@@ -1,98 +1,185 @@
 "use client";
 
 import React from "react";
-import { NoiseBackground } from "@/components/ui/noise-background";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { Vortex } from "@/components/ui/vortex";
-import AnimatedTooltipPreview from "@/components/ui/animated-tooltip-demo";
 
+/**
+ * Hero Section - Inspired by LUMEN Design
+ * 
+ * Features:
+ * - Dark gradient background with modern color palette
+ * - Iridescent 3D abstract shapes using pure CSS
+ * - Bold, clean typography
+ * - Minimal, elegant design
+ * - No animations for better performance
+ */
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      <Vortex
-        backgroundColor="transparent"
-        rangeY={800}
-        particleCount={500}
-        baseHue={200}
-        className="flex items-center justify-center w-full h-full min-h-screen pt-20"
-        containerClassName="bg-gradient-to-br from-blue-50 to-white dark:from-black dark:to-gray-900"
-      >
-        <Container className="relative z-10">
-          <div className="flex flex-col items-center text-center max-w-4xl mx-auto py-12 sm:py-16 md:py-20">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="inline-block py-1.5 px-3 sm:px-4 rounded-full bg-blue-50/80 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 sm:mb-6 backdrop-blur-sm">
-                The Future of Influencer Marketing
-              </span>
-            </motion.div>
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background - Dark gradient with teal/cyan accents */}
+      <div className="absolute inset-0 z-0">
+        {/* Main gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#111827] to-[#0f172a]" />
+        
+        {/* Subtle color accents */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-teal-900/20 via-transparent to-purple-900/10" />
+        
+        {/* Additional depth gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
+      </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-4 sm:mb-6 px-4 sm:px-0"
-            >
-              Scale Your Brand with <br className="hidden sm:block" />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">
-                Authentic Influence
-              </span>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 sm:mb-10 max-w-2xl px-4 sm:px-0"
-            >
-              We connect visionary brands with world-class creators to drive meaningful engagement and measurable ROI. No fluff, just results.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full px-4 sm:px-0"
-            >
-              <a href="#contact" className="w-full sm:w-auto">
-                <NoiseBackground
-                  containerClassName="w-full sm:w-fit p-2 rounded-full"
-                  gradientColors={[
-                    "rgb(37, 99, 235)",   // Blue 600
-                    "rgb(96, 165, 250)",  // Blue 400
-                    "rgb(147, 197, 253)", // Blue 300
-                  ]}
-                >
-                  <button className="h-12 sm:h-14 w-full cursor-pointer rounded-full bg-linear-to-r from-blue-50 via-blue-50 to-white px-6 sm:px-8 py-2 text-sm sm:text-base text-blue-700 shadow-[0px_2px_0px_0px_var(--color-blue-100)_inset,0px_0.5px_1px_0px_var(--color-blue-500)] transition-all duration-100 active:scale-98 dark:from-blue-950 dark:via-blue-950 dark:to-blue-900 dark:text-blue-100 dark:shadow-[0px_1px_0px_0px_var(--color-blue-900)_inset,0px_1px_0px_0px_var(--color-blue-700)] flex items-center justify-center gap-2 font-medium">
-                    Start Your Campaign <ArrowRight className="h-4 w-4" />
-                  </button>
-                </NoiseBackground>
-              </a>
-              <a href="#work" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="text-sm sm:text-base h-12 sm:h-14 px-6 sm:px-8 w-full sm:w-auto bg-white/50 dark:bg-black/50 backdrop-blur-sm">
-                  View Case Studies
-                </Button>
-              </a>
-            </motion.div>
-
-            {/* Social Proof / Trust Indicators */}
-            <motion.div
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ duration: 0.8, delay: 0.5 }}
-               className="mt-12 sm:mt-16 md:mt-20 pt-6 sm:pt-8 border-t border-gray-100/20 dark:border-gray-800/20 w-full px-4 sm:px-0"
-            >
-              <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6 font-medium text-center">TRUSTED BY INNOVATIVE BRANDS</p>
-              <AnimatedTooltipPreview />
-            </motion.div>
+      {/* Content */}
+      <Container className="relative z-10">
+        <div className="min-h-[85vh] flex flex-col justify-between py-16 md:py-20">
+          {/* Top Section - Headline */}
+          <div className="max-w-full mt-10">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[8rem] font-bold tracking-tight text-white leading-[1.05] font-display">
+              <span className="whitespace-nowrap">Influence, designed</span>
+              <span className="block  mt-2 text-blue-500">not chased.</span>
+            </h1>
           </div>
-        </Container>
-      </Vortex>
+
+          {/* Bottom Section - Description and Manifesto */}
+          <div className="relative mt-20 md:mt-0">
+            {/* Left - Description */}
+            <div className="max-w-2xl mt-15 space-y-8">
+              <p className="text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
+                We are an influencer marketing agency focused on purpose-led influence across Instagram, YouTube, and Reddit.
+              </p>
+              <p className="text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
+                In a market full of noise, we help brands earn attention by placing the right narratives with the right creators, in the right context.
+              </p>
+              
+              {/* CTA Button */}
+              <div className="pt-8">
+                <a href="#contact">
+                  <Button 
+                    size="lg" 
+                    className="h-14 px-10 text-base bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-full font-semibold shadow-2xl shadow-blue-500/30 border-0 transition-all duration-300"
+                  >
+                    Start Your Campaign
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            {/* Right - Manifesto Points (Extreme Right) */}
+            <div className="absolute right-0 bottom-0 space-y-5 text-right hidden md:block">
+              <div className="text-white/60">
+                <span className="text-base lg:text-lg font-medium whitespace-nowrap">No hype cycles.</span>
+              </div>
+              <div className="text-white/60">
+                <span className="text-base lg:text-lg font-medium whitespace-nowrap">No random collaborations.</span>
+              </div>
+              <div className="text-white">
+                <span className="text-base lg:text-lg font-bold whitespace-nowrap">Only influence that compounds.</span>
+              </div>
+            </div>
+            
+            {/* Mobile - Manifesto Points */}
+            <div className="mt-12 space-y-5 md:hidden">
+              <div className="text-white/60">
+                <span className="text-sm font-medium">No hype cycles.</span>
+              </div>
+              <div className="text-white/60">
+                <span className="text-sm font-medium">No random collaborations.</span>
+              </div>
+              <div className="text-white">
+                <span className="text-sm font-bold">Only influence that compounds.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+
+      {/* Iridescent 3D Abstract Shape - Right Side */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[600px] md:w-[700px] md:h-[800px] translate-x-1/4 z-[1] pointer-events-none">
+        <div className="iridescent-shape"></div>
+      </div>
+
+      <style jsx>{`
+        /* Iridescent 3D Abstract Shape */
+        .iridescent-shape {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transform: rotate(-20deg);
+        }
+        
+        .iridescent-shape::before {
+          content: '';
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          width: 80%;
+          height: 70%;
+          background: 
+            linear-gradient(135deg, 
+              rgba(30, 64, 175, 0.4) 0%,
+              rgba(59, 130, 246, 0.4) 25%,
+              rgba(251, 146, 60, 0.4) 50%,
+              rgba(245, 158, 11, 0.4) 75%,
+              rgba(37, 99, 235, 0.4) 100%
+            );
+          border-radius: 50% 30% 40% 60% / 60% 40% 60% 40%;
+          filter: blur(40px);
+          opacity: 0.6;
+        }
+        
+        .iridescent-shape::after {
+          content: '';
+          position: absolute;
+          top: 20%;
+          left: 20%;
+          width: 70%;
+          height: 60%;
+          background: 
+            linear-gradient(225deg, 
+              rgba(59, 130, 246, 0.5) 0%,
+              rgba(251, 146, 60, 0.5) 20%,
+              rgba(96, 165, 250, 0.5) 40%,
+              rgba(234, 179, 8, 0.5) 60%,
+              rgba(29, 78, 216, 0.5) 80%,
+              rgba(37, 99, 235, 0.5) 100%
+            );
+          border-radius: 40% 60% 50% 50% / 50% 50% 60% 40%;
+          filter: blur(50px);
+          opacity: 0.8;
+          transform: rotate(45deg);
+        }
+        
+        /* Additional abstract layers for depth */
+        @media (min-width: 768px) {
+          .iridescent-shape {
+            background: 
+              radial-gradient(ellipse 400px 500px at 40% 50%, 
+                rgba(59, 130, 246, 0.15) 0%,
+                transparent 70%
+              ),
+              radial-gradient(ellipse 350px 450px at 60% 40%, 
+                rgba(251, 146, 60, 0.15) 0%,
+                transparent 70%
+              ),
+              radial-gradient(ellipse 300px 400px at 50% 60%, 
+                rgba(245, 158, 11, 0.15) 0%,
+                transparent 70%
+              );
+            filter: blur(2px);
+          }
+        }
+        
+        /* Subtle glow effect around the shape */
+        @media (min-width: 768px) {
+          .iridescent-shape {
+            box-shadow: 
+              0 0 100px 50px rgba(59, 130, 246, 0.1),
+              0 0 150px 75px rgba(251, 146, 60, 0.1),
+              0 0 200px 100px rgba(37, 99, 235, 0.1);
+          }
+        }
+      `}</style>
     </section>
   );
 };

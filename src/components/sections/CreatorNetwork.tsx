@@ -60,11 +60,11 @@ export const CreatorNetwork = () => {
 
       <Container className="relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16 px-4 sm:px-0">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 tracking-tight">
             Access a Global Network
           </h2>
-          <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8">
-            From nano-influencers to mega-stars, we have direct access to thousands of creators across every niche and platform.
+          <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 font-light">
+            We don't just have a database. We have relationships. From nano-influencers to mega-stars, we connect you with the right voices.
           </p>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             <div className="text-center px-4 sm:px-6 py-3 sm:py-4 bg-white/5 rounded-lg backdrop-blur-sm min-w-[100px] sm:min-w-[120px]">
