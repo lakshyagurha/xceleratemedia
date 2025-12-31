@@ -31,20 +31,20 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <Container className="relative z-10">
-        <div className="min-h-[85vh] flex flex-col justify-between py-12 sm:py-16 md:py-20">
+      <Container className="relative z-10 w-full">
+        <div className="min-h-[85vh] flex flex-col justify-between py-12 sm:py-16 md:py-20 w-full">
           {/* Top Section - Headline */}
-          <div className="max-w-full mt-8 sm:mt-10">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8rem] font-bold tracking-tight text-white leading-[1.1] sm:leading-[1.05] font-display">
+          <div className="w-full mt-8 sm:mt-10 text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8rem] font-bold tracking-tight text-white leading-[1.1] sm:leading-[1.05] font-display text-left">
               <span className="block sm:inline">Influence, designed</span>
               <span className="block mt-1 sm:mt-2 text-blue-500">not chased.</span>
             </h1>
           </div>
 
           {/* Bottom Section - Description and Manifesto */}
-          <div className="relative mt-12 sm:mt-16 md:mt-20">
+          <div className="relative mt-12 sm:mt-16 md:mt-20 w-full">
             {/* Left - Description */}
-            <div className="max-w-2xl space-y-4 sm:space-y-6 md:space-y-8">
+            <div className="w-full max-w-2xl space-y-4 sm:space-y-6 md:space-y-8 text-left">
               <p className="text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
                 We are an influencer marketing agency focused on purpose-led influence across Instagram, YouTube, and Reddit.
               </p>
