@@ -126,13 +126,13 @@ export const FileUpload: React.FC<FileUploadProps> = ({
         )}
       >
         {value ? (
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3 flex-1 min-w-0">
-              <FileText className="h-5 w-5 text-white/80 flex-shrink-0" />
-              <span className="text-base font-medium text-white truncate">
+          <div className="flex items-center justify-between gap-2 sm:gap-4">
+            <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
+              <FileText className="h-4 w-4 sm:h-5 sm:w-5 text-white/80 flex-shrink-0" />
+              <span className="text-sm sm:text-base font-medium text-white truncate">
                 {value.name}
               </span>
-              <span className="text-sm text-white/60 flex-shrink-0">
+              <span className="text-xs sm:text-sm text-white/60 flex-shrink-0 hidden sm:inline">
                 ({(value.size / 1024 / 1024).toFixed(2)} MB)
               </span>
             </div>
@@ -140,30 +140,30 @@ export const FileUpload: React.FC<FileUploadProps> = ({
               <button
                 type="button"
                 onClick={handleRemove}
-                className="p-1 text-white/60 hover:text-white transition-colors"
+                className="p-1 sm:p-1.5 text-white/60 hover:text-white transition-colors flex-shrink-0"
                 aria-label="Remove file"
               >
-                <X className="h-4 w-4" />
+                <X className="h-4 w-4 sm:h-5 sm:w-5" />
               </button>
             )}
           </div>
         ) : (
-          <div className="flex items-center gap-4">
-            <Upload className="h-5 w-5 text-white/60 flex-shrink-0" />
-            <div className="flex-1">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+            <Upload className="h-4 w-4 sm:h-5 sm:w-5 text-white/60 flex-shrink-0" />
+            <div className="flex-1 w-full sm:w-auto">
               <label
                 htmlFor="resume-upload"
                 className={cn(
-                  "cursor-pointer text-base font-medium text-white hover:text-white/80 transition-colors",
+                  "cursor-pointer text-sm sm:text-base font-medium text-white hover:text-white/80 transition-colors block sm:inline",
                   disabled && "cursor-not-allowed opacity-50"
                 )}
               >
                 Click to upload
               </label>
-              <span className="text-base text-white/60 mx-2">
+              <span className="text-sm sm:text-base text-white/60 mx-1 sm:mx-2 block sm:inline">
                 or drag and drop
               </span>
-              <p className="text-sm text-white/50 mt-1">
+              <p className="text-xs sm:text-sm text-white/50 mt-1 sm:mt-1">
                 PDF, DOC, DOCX (max 10 MB)
               </p>
             </div>

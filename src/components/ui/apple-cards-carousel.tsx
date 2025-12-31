@@ -164,13 +164,13 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-72 sm:h-80 w-52 sm:w-56 flex-col items-center justify-center overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+      className="relative z-10 flex h-64 sm:h-72 md:h-80 w-48 sm:w-52 md:w-56 flex-col items-center justify-center overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl bg-gray-100 lg:h-[40rem] lg:w-96 dark:bg-neutral-900"
     >
       <div className="pointer-events-none absolute inset-0 z-30 h-full w-full bg-black/70" />
-      <div className="relative z-40 p-4 sm:p-6 md:p-8">
+      <div className="relative z-40 p-3 sm:p-4 md:p-6 lg:p-8">
         <motion.p
           layoutId={layout ? `title-${card.title}` : undefined}
-          className="max-w-xs text-center font-sans text-lg sm:text-xl font-extrabold [text-wrap:balance] text-white md:text-3xl"
+          className="max-w-xs text-center font-sans text-base sm:text-lg md:text-xl font-extrabold [text-wrap:balance] text-white lg:text-3xl"
         >
           {card.title}
         </motion.p>

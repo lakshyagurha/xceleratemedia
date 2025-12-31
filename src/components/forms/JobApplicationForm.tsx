@@ -142,12 +142,12 @@ export const JobApplicationForm: React.FC = () => {
 
   if (isSubmitted) {
     return (
-      <div className="w-full py-12 text-center">
-        <CheckCircle2 className="h-16 w-16 text-white mx-auto mb-6" />
-        <h3 className="text-2xl font-semibold text-white mb-3 tracking-tight">
+      <div className="w-full py-8 sm:py-12 text-center">
+        <CheckCircle2 className="h-12 w-12 sm:h-16 sm:w-16 text-white mx-auto mb-4 sm:mb-6" />
+        <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 sm:mb-3 tracking-tight px-4">
           Application Submitted Successfully!
         </h3>
-        <p className="text-base text-white/80 max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base text-white/80 max-w-2xl mx-auto px-4">
           Thank you for your interest. We'll review your application and get back to you soon.
         </p>
       </div>
@@ -156,12 +156,12 @@ export const JobApplicationForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 mb-6 sm:mb-8">
         {/* Full Name */}
         <div>
           <label
             htmlFor="full_name"
-            className="block text-sm font-semibold text-white mb-3 tracking-wide uppercase text-xs"
+            className="block text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 tracking-wide uppercase"
           >
             Full Name <span className="text-white/60">*</span>
           </label>
@@ -172,7 +172,7 @@ export const JobApplicationForm: React.FC = () => {
             value={formData.full_name}
             onChange={handleInputChange}
             disabled={isSubmitting}
-            className="w-full px-6 py-4 bg-transparent border-b-2 border-white/20 text-white text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
+            className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-b-2 border-white/20 text-white text-sm sm:text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
             placeholder="John Doe"
           />
           {errors.full_name && (
@@ -186,7 +186,7 @@ export const JobApplicationForm: React.FC = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-semibold text-white mb-3 tracking-wide uppercase text-xs"
+            className="block text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 tracking-wide uppercase"
           >
             Email <span className="text-white/60">*</span>
           </label>
@@ -197,7 +197,7 @@ export const JobApplicationForm: React.FC = () => {
             value={formData.email}
             onChange={handleInputChange}
             disabled={isSubmitting}
-            className="w-full px-6 py-4 bg-transparent border-b-2 border-white/20 text-white text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
+            className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-b-2 border-white/20 text-white text-sm sm:text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
             placeholder="john.doe@example.com"
           />
           {errors.email && (
@@ -211,7 +211,7 @@ export const JobApplicationForm: React.FC = () => {
         <div>
           <label
             htmlFor="skills"
-            className="block text-sm font-semibold text-white mb-3 tracking-wide uppercase text-xs"
+            className="block text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 tracking-wide uppercase"
           >
             Skills
           </label>
@@ -222,7 +222,7 @@ export const JobApplicationForm: React.FC = () => {
             value={formData.skills}
             onChange={handleInputChange}
             disabled={isSubmitting}
-            className="w-full px-6 py-4 bg-transparent border-b-2 border-white/20 text-white text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
+            className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-b-2 border-white/20 text-white text-sm sm:text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
             placeholder="e.g., Marketing, Content Creation, Social Media"
           />
           {errors.skills && (
@@ -236,7 +236,7 @@ export const JobApplicationForm: React.FC = () => {
         <div>
           <label
             htmlFor="role_preference"
-            className="block text-sm font-semibold text-white mb-3 tracking-wide uppercase text-xs"
+            className="block text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 tracking-wide uppercase"
           >
             Role / Job Type
           </label>
@@ -247,7 +247,7 @@ export const JobApplicationForm: React.FC = () => {
             value={formData.role_preference}
             onChange={handleInputChange}
             disabled={isSubmitting}
-            className="w-full px-6 py-4 bg-transparent border-b-2 border-white/20 text-white text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
+            className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-b-2 border-white/20 text-white text-sm sm:text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 placeholder:text-white/40"
             placeholder="e.g., Content Creator, Marketing Manager"
           />
           {errors.role_preference && (
@@ -259,10 +259,10 @@ export const JobApplicationForm: React.FC = () => {
       </div>
 
       {/* Description - Full Width */}
-      <div className="mb-8">
+      <div className="mb-6 sm:mb-8">
         <label
           htmlFor="description"
-          className="block text-sm font-semibold text-white mb-3 tracking-wide uppercase text-xs"
+          className="block text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 tracking-wide uppercase"
         >
           Short Description / Introduction
         </label>
@@ -272,8 +272,8 @@ export const JobApplicationForm: React.FC = () => {
           value={formData.description}
           onChange={handleInputChange}
           disabled={isSubmitting}
-          rows={6}
-          className="w-full px-6 py-4 bg-transparent border-b-2 border-white/20 text-white text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 resize-none placeholder:text-white/40"
+          rows={5}
+          className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-transparent border-b-2 border-white/20 text-white text-sm sm:text-base focus:outline-none focus:border-white transition-colors duration-200 disabled:opacity-50 resize-none placeholder:text-white/40"
           placeholder="Tell us a bit about yourself and why you're interested in joining our team..."
         />
         {errors.description && (
@@ -284,8 +284,8 @@ export const JobApplicationForm: React.FC = () => {
       </div>
 
       {/* Resume Upload */}
-      <div className="mb-8">
-        <label className="block text-sm font-semibold text-white mb-3 tracking-wide uppercase text-xs">
+      <div className="mb-6 sm:mb-8">
+        <label className="block text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 tracking-wide uppercase">
           Resume <span className="text-white/60">*</span>
         </label>
         <FileUpload
@@ -305,12 +305,12 @@ export const JobApplicationForm: React.FC = () => {
       )}
 
       {/* Submit Button */}
-      <div className="flex justify-start mt-12">
+      <div className="flex justify-start mt-8 sm:mt-12">
         <Button
           type="submit"
           disabled={isSubmitting}
           isLoading={isSubmitting}
-          className="px-12 py-4 text-base font-semibold tracking-wide"
+          className="px-8 sm:px-12 py-3 sm:py-4 text-sm sm:text-base font-semibold tracking-wide w-full sm:w-auto"
           size="lg"
         >
           {isSubmitting ? "Submitting..." : "Submit Application"}

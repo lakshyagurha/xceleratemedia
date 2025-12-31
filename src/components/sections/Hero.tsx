@@ -32,32 +32,32 @@ export const Hero = () => {
 
       {/* Content */}
       <Container className="relative z-10">
-        <div className="min-h-[85vh] flex flex-col justify-between py-16 md:py-20">
+        <div className="min-h-[85vh] flex flex-col justify-between py-12 sm:py-16 md:py-20">
           {/* Top Section - Headline */}
-          <div className="max-w-full mt-10">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[8rem] font-bold tracking-tight text-white leading-[1.05] font-display">
-              <span className="whitespace-nowrap">Influence, designed</span>
-              <span className="block  mt-2 text-blue-500">not chased.</span>
+          <div className="max-w-full mt-8 sm:mt-10">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8rem] font-bold tracking-tight text-white leading-[1.1] sm:leading-[1.05] font-display">
+              <span className="block sm:inline">Influence, designed</span>
+              <span className="block mt-1 sm:mt-2 text-blue-500">not chased.</span>
             </h1>
           </div>
 
           {/* Bottom Section - Description and Manifesto */}
-          <div className="relative mt-20 md:mt-0">
+          <div className="relative mt-12 sm:mt-16 md:mt-20">
             {/* Left - Description */}
-            <div className="max-w-2xl mt-15 space-y-8">
-              <p className="text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
+            <div className="max-w-2xl space-y-4 sm:space-y-6 md:space-y-8">
+              <p className="text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
                 We are an influencer marketing agency focused on purpose-led influence across Instagram, YouTube, and Reddit.
               </p>
-              <p className="text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
+              <p className="text-base sm:text-lg md:text-xl lg:text-xl leading-relaxed text-white font-light">
                 In a market full of noise, we help brands earn attention by placing the right narratives with the right creators, in the right context.
               </p>
               
               {/* CTA Button */}
-              <div className="pt-8">
+              <div className="pt-6 sm:pt-8">
                 <a href="#contact">
                   <Button 
                     size="lg" 
-                    className="h-14 px-10 text-base bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-full font-semibold shadow-2xl shadow-blue-500/30 border-0 transition-all duration-300"
+                    className="h-12 sm:h-14 px-6 sm:px-8 md:px-10 text-sm sm:text-base bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-full font-semibold shadow-2xl shadow-blue-500/30 border-0 transition-all duration-300 w-full sm:w-auto"
                   >
                     Start Your Campaign
                   </Button>
@@ -66,7 +66,7 @@ export const Hero = () => {
             </div>
 
             {/* Right - Manifesto Points (Extreme Right) */}
-            <div className="absolute right-0 bottom-0 space-y-5 text-right hidden md:block">
+            <div className="absolute right-0 bottom-0 space-y-4 sm:space-y-5 text-right hidden md:block">
               <div className="text-white/60">
                 <span className="text-base lg:text-lg font-medium whitespace-nowrap">No hype cycles.</span>
               </div>
@@ -79,15 +79,15 @@ export const Hero = () => {
             </div>
             
             {/* Mobile - Manifesto Points */}
-            <div className="mt-12 space-y-5 md:hidden">
+            <div className="mt-8 sm:mt-12 space-y-3 sm:space-y-4 md:hidden">
               <div className="text-white/60">
-                <span className="text-sm font-medium">No hype cycles.</span>
+                <span className="text-sm sm:text-base font-medium">No hype cycles.</span>
               </div>
               <div className="text-white/60">
-                <span className="text-sm font-medium">No random collaborations.</span>
+                <span className="text-sm sm:text-base font-medium">No random collaborations.</span>
               </div>
               <div className="text-white">
-                <span className="text-sm font-bold">Only influence that compounds.</span>
+                <span className="text-sm sm:text-base font-bold">Only influence that compounds.</span>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ export const Hero = () => {
       </Container>
 
       {/* Iridescent 3D Abstract Shape - Right Side */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[600px] md:w-[700px] md:h-[800px] translate-x-1/4 z-[1] pointer-events-none">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[400px] sm:w-[400px] sm:h-[500px] md:w-[500px] md:h-[600px] lg:w-[700px] lg:h-[800px] translate-x-1/4 sm:translate-x-1/3 md:translate-x-1/4 z-[1] pointer-events-none opacity-50 sm:opacity-100">
         <div className="iridescent-shape"></div>
       </div>
 

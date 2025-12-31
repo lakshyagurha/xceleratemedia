@@ -20,21 +20,21 @@ export default function JoinUsPage() {
       </div>
 
       {/* Iridescent 3D Abstract Shape - Right Side */}
-      <div className="absolute right-0 top-1/3 -translate-y-1/2 w-[500px] h-[600px] md:w-[700px] md:h-[800px] translate-x-1/4 z-[1] pointer-events-none">
+      <div className="absolute right-0 top-1/3 -translate-y-1/2 w-[300px] h-[400px] sm:w-[400px] sm:h-[500px] md:w-[500px] md:h-[600px] lg:w-[700px] lg:h-[800px] translate-x-1/4 sm:translate-x-1/3 md:translate-x-1/4 z-[1] pointer-events-none opacity-50 sm:opacity-100">
         <div className="iridescent-shape"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 pt-16 sm:pt-20 min-h-screen pb-20">
+      <div className="relative z-10 pt-16 sm:pt-20 min-h-screen pb-12 sm:pb-16 md:pb-20">
         <Section className="bg-transparent">
           <Container>
             <div className="w-full">
               {/* Header */}
-              <div className="text-left mb-12 sm:mb-16">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white">
+              <div className="text-left mb-8 sm:mb-12 md:mb-16">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight text-white">
                   Join Our Team
                 </h1>
-                <p className="text-xl text-white/80 max-w-3xl leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed">
                   We're always looking for talented individuals who are passionate about influencer marketing and creative excellence. If you're ready to make an impact, we'd love to hear from you.
                 </p>
               </div>
@@ -45,7 +45,7 @@ export default function JoinUsPage() {
               </div>
 
               {/* Additional Info */}
-              <div className="mt-12 text-center text-sm text-white/60">
+              <div className="mt-8 sm:mt-12 text-center text-xs sm:text-sm text-white/60">
                 <p>
                   By submitting this application, you agree to our privacy policy. 
                   We'll review your application and contact you if there's a match.

@@ -64,25 +64,25 @@ export const PlatformsWeUse = () => {
         <div className="absolute inset-0 bg-gradient-to-tl from-blue-900/10 via-transparent to-blue-800/5" />
         
         {/* Abstract geometric shapes */}
-        <div className="absolute top-10 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-gradient-to-tl from-blue-400/5 to-transparent rounded-full blur-3xl" />
-        <div className="absolute top-1/3 right-10 w-64 h-64 bg-white/3 rounded-full blur-3xl" />
+        <div className="absolute top-10 left-1/4 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-1/4 w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 bg-gradient-to-tl from-blue-400/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/3 right-10 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white/3 rounded-full blur-3xl" />
         
         {/* Radial gradient overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.08),transparent_60%)]" />
       </div>
       
       <Container className="relative z-10">
-        <div className="mb-12 sm:mb-16 md:mb-20">
-          <p className="text-xs sm:text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4 sm:mb-6">
+        <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+          <p className="text-xs sm:text-sm font-semibold text-gray-400 uppercase tracking-widest mb-3 sm:mb-4 md:mb-6">
             WHERE WE CREATE IMPACT
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
             Platforms We Use
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto mb-8 sm:mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto mb-6 sm:mb-8 md:mb-12">
           {platforms.map((platform, index) => {
             const IconComponent = platform.icon;
             return (
@@ -92,7 +92,7 @@ export const PlatformsWeUse = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Card */}
-                <div className="relative aspect-square rounded-2xl sm:rounded-3xl overflow-hidden transition-all duration-500 hover:scale-105 hover:-translate-y-2">
+                <div className="relative aspect-square rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                   {/* Background with platform color */}
                   <div className={`absolute inset-0 ${platform.bgColor} backdrop-blur-sm`} />
                   
@@ -100,26 +100,26 @@ export const PlatformsWeUse = () => {
                   <div className={`absolute inset-0 bg-gradient-to-br ${platform.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                   
                   {/* Silhouette/Icon Background */}
-                  <div className="absolute inset-0 flex items-center justify-center p-8 sm:p-10 md:p-12 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                  <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
                     <IconComponent className="w-full h-full" />
                   </div>
                   
                   {/* Main Icon */}
-                  <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-8 md:p-10">
-                    <div className={`${platform.iconBg} p-4 sm:p-5 md:p-6 rounded-2xl shadow-2xl group-hover:scale-110 transition-transform duration-500`}>
-                      <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" />
+                  <div className="absolute inset-0 flex items-center justify-center p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10">
+                    <div className={`${platform.iconBg} p-2 sm:p-3 md:p-4 lg:p-5 xl:p-6 rounded-xl sm:rounded-2xl shadow-2xl group-hover:scale-110 transition-transform duration-500`}>
+                      <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-white" />
                     </div>
                   </div>
                   
                   {/* Border glow effect */}
-                  <div className="absolute inset-0 rounded-2xl sm:rounded-3xl border border-white/10 group-hover:border-white/30 transition-colors duration-500" />
+                  <div className="absolute inset-0 rounded-xl sm:rounded-2xl md:rounded-3xl border border-white/10 group-hover:border-white/30 transition-colors duration-500" />
                   
                   {/* Glow effect on hover */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${platform.gradient} opacity-0 group-hover:opacity-30 blur-2xl -z-10 transition-opacity duration-500`} />
                 </div>
 
                 {/* Platform name */}
-                <p className="mt-3 sm:mt-4 text-xs sm:text-sm md:text-base font-semibold text-gray-400 group-hover:text-white transition-colors duration-300">
+                <p className="mt-2 sm:mt-3 md:mt-4 text-xs sm:text-sm md:text-base font-semibold text-gray-400 group-hover:text-white transition-colors duration-300 text-center">
                   {platform.name}
                 </p>
               </div>
@@ -129,7 +129,7 @@ export const PlatformsWeUse = () => {
 
         {/* Bottom description */}
         <div className="max-w-3xl">
-          <p className="text-sm sm:text-base md:text-lg text-gray-400 font-light leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 font-light leading-relaxed">
             We leverage the unique strengths of each platform to craft narratives that resonate, building campaigns that transcend channels and create lasting impact.
           </p>
         </div>

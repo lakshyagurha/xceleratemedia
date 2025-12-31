@@ -61,3 +61,30 @@ video {
 .drop-shadow-2xl {
   filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.9));
 }
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better text rendering on mobile */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Improve touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Improve scrolling on mobile */
+@media (max-width: 768px) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+}

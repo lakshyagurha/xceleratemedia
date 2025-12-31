@@ -22,10 +22,14 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+      // Close mobile menu on scroll
+      if (isOpen) {
+        setIsOpen(false);
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen]);
 
   return (
     <header
@@ -39,7 +43,7 @@ export const Navbar = () => {
       <Container>
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="text-xl sm:text-2xl font-bold tracking-tighter font-display">
+          <Link href="/" className="text-lg sm:text-xl md:text-2xl font-bold tracking-tighter font-display">
             Xcelerate<span className="text-blue-600">Media</span>
           </Link>
 
@@ -72,20 +76,20 @@ export const Navbar = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-black border-t dark:border-gray-800">
-          <Container className="py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-white dark:bg-black border-t dark:border-gray-800 shadow-lg">
+          <Container className="py-4 sm:py-6 flex flex-col gap-3 sm:gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2"
+                className="text-base sm:text-lg font-medium text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 py-2 sm:py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <Link href="#contact" onClick={() => setIsOpen(false)}>
-              <Button className="w-full">Get Started</Button>
+            <Link href="#contact" onClick={() => setIsOpen(false)} className="mt-2">
+              <Button className="w-full text-sm sm:text-base">Get Started</Button>
             </Link>
           </Container>
         </div>
