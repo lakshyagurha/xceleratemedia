@@ -2,7 +2,7 @@ import AppleCardsCarouselDemo from "@/components/ui/apple-cards-carousel-demo";
 
 export function LatestWork() {
   return (
-    <section id="latest-work" className="bg-black relative overflow-hidden py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
+    <section id="latest-work" className="bg-black relative overflow-hidden py-4 sm:py-12 md:py-16 lg:py-20 xl:py-24">
       {/* Background layers similar to hero */}
       <div className="absolute inset-0 z-0">
         {/* Base black with subtle gradients */}
